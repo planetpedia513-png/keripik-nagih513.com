@@ -3,157 +3,627 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kripik Nagih - Kriuknya Juara!</title>
+    <title>NEON TOPUP | Top-up Game Tercepat & Terpercaya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .gradient-yellow { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
-        .product-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0d0118; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .card-game:hover { transform: translateY(-8px); border-color: #a855f7; box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.4); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .bg-purple-gradient { background: linear-gradient(135deg, #6d28d9 0%, #1e1b4b 100%); }
     </style>
 </head>
-<body class="bg-orange-50 text-gray-800">
+<body class="text-gray-100">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-orange-600 tracking-tight">KERIPK NAGIH513</h1>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#home" class="hover:text-orange-500">Beranda</a>
-                <a href="#rasa" class="hover:text-orange-500">Varian Rasa</a>
-                <a href="#tentang" class="hover:text-orange-500">Keunggulan</a>
+    <nav class="sticky top-0 z-50 glass px-4 py-3 md:px-12 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <button class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            <div class="text-xl md:text-2xl font-extrabold tracking-tighter text-purple-500">
+                NEON<span class="text-white">TOPUP</span>
             </div>
-            <a href="//wa.me/6282124360741?text=Halo%20saya%20mau%20pesan">Pesan Sekarang</a>" <class=" bg-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-600 transition">Pesan Sekarang</a>
+        </div>
+        <div class="hidden md:flex gap-6 text-sm font-semibold italic">
+            <a href="#" class="text-purple-400">BERANDA</a>
+            <a href="#" class="hover:text-purple-400 transition">CEK PESANAN</a>
+            <a href="#" class="hover:text-purple-400 transition">PROMO</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="text-lg"><i class="fas fa-search"></i></button>
+            <button class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-full font-bold text-xs md:text-sm transition shadow-lg shadow-purple-900/40">
+                DAFTAR
+            </button>
         </div>
     </nav>
 
-    <section id="home" class="pt-32 pb-20 px-6 gradient-yellow text-white">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-12 md:mb-0">
-                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Nikmati Kripik Pisang <br><span class="text-orange-900">Premium & Renyah!</span></h2>
-                <p class="text-lg mb-8 opacity-90">Camilan sehat dari pisang pilihan dengan bumbu yang melimpah. Sekali coba, dijamin bakal nagih terus!</p>
-                <a href="#rasa" class="bg-white text-orange-600 px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-orange-100 transition">Lihat 3 Varian Rasa</a>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="relative">
-                    <div class="absolute -inset-4 bg-orange-200/50 rounded-full blur-3xl"></div>
-                    <img src="https://i.postimg.cc/bvSwn2xV/Gemini-Generated-Image-wbjdpmwbjdpmwbjd.png" alt="Kripik Pisang" class="relative rounded-3xl shadow-2xl w-80 md:w-96 border-8 border-white">
-                </div>
-            </div>
-        </div>
-    </section>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <section id="rasa" class="py-24 px-6">
-        <div class="container mx-auto text-center">
-            <h3 class="text-4xl font-bold mb-4">Pilih <span class="text-orange-500">Favoritmu!</span></h3>
-            <p class="text-gray-500 mb-16">Tersedia dalam 3 varian rasa yang menggoyang lidah</p>
-            
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center">
-                    <img src="https://i.postimg.cc/T1DPVvq6/Whats-App-Image-2026-01-18-at-20-25-41.jpg">
-                    <h4 class="text-2xl font-bold mb-3">Original</h4>
-                    <p class="text-gray-500 mb-6 text-sm">Rasa klasik pisang pilihan yang pas dan renyah.</p>
-                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 5.000</p>
-                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20Original" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center relative">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Paling Laris</div>
-                    <img src="https://i.postimg.cc/28ndQVw3/Whats-App-Image-2026-01-18-at-20-25-37.jpg">
-                    <h4 class="text-2xl font-bold mb-3">Cokelat Lumer</h4>
-                    <p class="text-gray-500 mb-6 text-sm">Balutan bubuk cokelat premium yang tebal dan melimpah di setiap gigitan.</p>
-                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 8.000</p>
-                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20Cokelat" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center">
-                    <img src="https://i.postimg.cc/NFyJsp8H/Whats-App-Image-2026-01-18-at-20-25-49.jpg">
-                    <h4 class="text-2xl font-bold mb-3">manis</h4>
-                    <p class="text-gray-500 mb-6 text-sm">Paduan rasa manis nagih dan gurih yang bikin susah berhenti makan.</p>
-                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 6.000</p>
-                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20manis" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
-                </div>
-            </div>
-        </div>
+<style>
+    .swiper { width: 100%; height: auto; border-radius: 24px; }
+    .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+    .swiper-pagination-bullet { background: #6b7280; opacity: 1; }
+    .swiper-pagination-bullet-active { background: #a855f7 !important; width: 24px; border-radius: 5px; }
     
-    <section id="pesan-kustom" class="py-20 bg-white">
-    <div class="container mx-auto px-6 max-w-4xl">
-        <div class="bg-orange-50 rounded-3xl p-8 md:p-12 shadow-2xl border border-orange-200">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-orange-800 mb-4">Form Pemesanan Kustom</h2>
-                <p class="text-gray-600">Isi detail di bawah untuk pesanan yang lebih akurat</p>
+    /* Style untuk News Card */
+    .news-card { background: white; border-radius: 12px; overflow: hidden; transition: transform 0.3s; }
+    .news-card:hover { transform: scale(1.02); }
+    .news-card img { width: 100%; height: 160px; object-fit: cover; }
+    .news-text-box { padding: 15px; color: #111; }
+</style>
+
+<header class="p-4 md:px-12 mt-4">
+    <div class="swiper mySwiper shadow-2xl">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://i.postimg.cc/J4mZdsyp/Whats-App-Image-2026-01-22-at-17-56-55.jpg">
             </div>
 
-            <form id="waForm" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-semibold mb-2 text-gray-700">Pilih Varian Rasa</label>
-                        <select id="rasa" class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
-                            <option value="Original Manis">Original Manis (Rp 5.000)</option>
-                            <option value="Cokelat Lumer">Cokelat Lumer (Rp 7.000)</option>
-                            <option value="Pedas Gurih">Pedas Gurih (Rp 6.000)</option>
-                            <option value="Campur/Mix">Campur / Mix Rasa</option>
-                        </select>
-                    </div>
+            <div class="swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEk_promo_bundle.jpg" alt="Promo Bundle">
+            </div>
 
-                    <div>
-                        <label class="block text-sm font-semibold mb-2 text-gray-700">Jumlah Bungkus</label>
-                        <input type="number" id="jumlah" min="1" value="1" class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
-                    </div>
-                </div>
+            <div class="swiper-slide">
+                <img src="https://i.postimg.cc/qM9CPQvy/Whats-App-Image-2026-01-22-at-19-16-51.jpg" alt="Discord Join">
+            </div>
 
-                <div>
-                    <label class="block text-sm font-semibold mb-2 text-gray-700">Alamat Lengkap Pengiriman</label>
-                    <textarea id="alamat" rows="3" placeholder="Masukkan alamat lengkap Anda..." class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500"></textarea>
-                </div>
+        </div>
+        <div class="swiper-pagination !bottom-4"></div>
+    </div>
+</header>
 
-                <button type="button" onclick="kirimWA()" class="w-full bg-green-500 text-white font-bold py-4 rounded-xl hover:bg-green-600 transition flex items-center justify-center space-x-3 shadow-lg">
-                    <i class="fab fa-whatsapp text-2xl"></i>
-                    <span>Kirim Pesanan ke WhatsApp</span>
-                </button>
-            </form>
+<section class="p-4 md:px-12 mt-12">
+    <div class="flex justify-between items-end mb-6">
+        <h2 class="text-3xl font-black italic uppercase tracking-tighter">warning</h2>
+    </div>
+    
+      <img src="https://i.postimg.cc/J4mZdsyp/Whats-App-Image-2026-01-22-at-17-56-55.jpg"> 
+
+</div>
+
+</div>
         </div>
     </div>
 </section>
 
-<script>
-    function kirimWA() {
-        const nomorWA = "6282124360741";
-        const rasa = document.getElementById('rasa').value;
-        const jumlah = document.getElementById('jumlah').value;
-        const alamat = document.getElementById('alamat').value;
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        if (alamat === "") {
-            alert("Mohon isi alamat pengiriman terlebih dahulu!");
-            return;
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // Fitur geser tangan (touch) otomatis aktif
+        grabCursor: true,
+    });
+</script>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Top-Up Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #2c0339; /* Warna ungu gelap */
+            --card-bg: #3d0a4d;
+            --yellow: #f3c319;
+            --white: #ffffff;
+            --text-gray: #333;
         }
 
-        const pesan = "Halo Kripik Nagih, saya ingin pesan kustom:%0A%0A" +
-                      "*Varian:* " + rasa + "%0A" +
-                      "*Jumlah:* " + jumlah + " bungkus%0A" +
-                      "*Alamat:* " + alamat + "%0A%0A" +
-                      "Mohon segera diproses ya!";
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--white);
+        }
 
-        const linkWA = "https://wa.me/" + nomorWA + "?text=" + pesan;
-        window.open(linkWA, '_blank');
-    }
-</script>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
+        /* --- BAGIAN 1: DAFTAR GAME (OVERLAY) --- */
+        #game-list-section {
+            display: block; /* Muncul di awal */
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grid-games {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .game-card .badge {
+            position: absolute;
+            top: 0; left: 0;
+            background: var(--yellow);
+            color: black;
+            font-size: 11px;
+            padding: 6px 12px;
+            font-weight: bold;
+            border-bottom-right-radius: 12px;
+            z-index: 2;
+        }
+
+        .game-name {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* --- BAGIAN 2: DETAIL TOP UP --- */
+        #topup-detail-section {
+            display: none; /* Tersembunyi di awal */
+        }
+
+        .btn-back {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid white;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .header-game {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-game img {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .secure-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        .layout-main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        .desc-side p {
+            line-height: 1.6;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        /* Form Styling */
+        .step-box {
+            background: white;
+            color: var(--text-gray);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .step-circle {
+            position: absolute;
+            top: -15px; left: -15px;
+            background: #5d3dfc;
+            color: white;
+            width: 35px; height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: 4px solid var(--primary-bg);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        .grid-nominal {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .nominal-item {
+            border: 2px solid #eee;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .nominal-item:hover {
+            border-color: #5d3dfc;
+            background: #f8f7ff;
+        }
+
+        .nominal-item b {
+            display: block;
+            color: #e91e63;
+            margin-top: 5px;
+        }
+
+        /* --- BAGIAN 3: FOOTER (Kuning) --- */
+        .footer-yellow {
+            background-color: var(--yellow);
+            color: var(--text-gray);
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .footer-col h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--text-gray);
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .btn-footer {
+            background: #d4a706;
+            padding: 12px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            font-size: 24px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(0,0,0,0.1);
+            margin-top: 40px;
+            padding-top: 20px;
+            font-size: 11px;
+            display: flex;
+            gap: 20px;
+            font-weight: bold;
+        }
+
+        /* RESPONSIF HP */
+        @media (max-width: 900px) {
+            .layout-main { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 600px) {
+            .grid-nominal { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .social-links { justify-content: center; }
+            .btn-footer { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Game - Order via WA</title>
+    <style>
+        /* Desain Dasar */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #2c1654; color: white; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: auto; }
+        
+        /* Halaman Utama (Pilihan Game) */
+        .game-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .game-card { background: #3e227a; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer; transition: 0.3s; border: 1px solid transparent; }
+        .game-card:hover { border-color: #7c4dff; transform: translateY(-5px); }
+        .game-card img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+
+        /* Halaman Form (Disembunyikan awalnya) */
+        #topup-form { display: none; background: white; color: #333; padding: 25px; border-radius: 20px; margin-top: 20px; }
+        .section-box { margin-bottom: 25px; }
+        .circle-num { background: #7c4dff; color: white; padding: 5px 12px; border-radius: 50%; font-weight: bold; margin-right: 10px; }
+        
+        input { width: 100%; padding: 12px; margin-top: 10px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
+        
+        /* Grid Pilihan Diamond */
+        .diamond-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 10px; }
+        .diamond-item { border: 2px solid #eee; padding: 15px; border-radius: 12px; text-align: center; cursor: pointer; transition: 0.2s; }
+        .diamond-item.active { border-color: #7c4dff; background: #f3efff; }
+        .diamond-item b { display: block; color: #2c1654; }
+        .diamond-item small { color: #ff4d4d; font-weight: bold; }
+
+        .btn-beli { background: #7c4dff; color: white; border: none; padding: 18px; width: 100%; border-radius: 50px; font-weight: bold; font-size: 18px; cursor: pointer; margin-top: 20px; box-shadow: 0 4px 15px rgba(124, 77, 255, 0.4); }
+        .btn-back { color: #7c4dff; background: none; border: none; cursor: pointer; display: block; margin: 15px auto; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    </div>
+    </div>
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANET GAME - Top Up Instan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { background-color: #280031; color: white; font-family: 'Segoe UI', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; cursor: pointer; }
+        .glass:hover { border-color: #7c4dff; transform: translateY(-5px); }
+        
+        .section-box { background: white; color: #2c1654; padding: 24px; border-radius: 20px; margin-bottom: 20px; }
+        .circle-num { background: #7c4dff; color: white; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; margin-right: 10px; font-weight: bold; }
+        
+        .diamond-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; margin-top: 15px; }
+        .diamond-item { border: 2px solid #eee; padding: 15px; border-radius: 12px; cursor: pointer; text-align: center; transition: 0.2s; color: #2c1654; }
+        .diamond-item.active { border-color: #7c4dff; background: #f3efff; }
+
+        .btn-beli { background: #7c4dff; color: white; width: 100%; padding: 16px; border-radius: 12px; font-weight: bold; cursor: pointer; border: none; font-size: 16px; }
+        .btn-back { background: transparent; color: #aaa; width: 100%; padding: 10px; border-radius: 12px; border: 1px solid #444; cursor: pointer; margin-top: 15px; }
+     </style>
+</head>
+ </div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Topup Game - NeonTopup</title>
+    <style>
+        .nominal-card.selected {
+            border-color: #7c3aed;
+            background-color: #f5f3ff;
+        }
+    </style>
+</head>
+<body class="bg-[#120024] p-4 md:p-10 text-white font-sans">
+
+    <div id="katalog-section">
+        <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+            <span class="bg-purple-600 w-2 h-8 rounded-full"></span> PILIH GAME
+        </h2>
+       
+        <div class="flex justify-start gap-4 p-5">
+            <div onclick="pilihGame('mlbb')">
+                <img src="https://i.postimg.cc/T1q1bp17/Whats-App-Image-2026-01-22-at-14-56-44.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Mobile Legends: Bang Bang</p>
+            </div>
+            
+            <div onclick="pilihGame('ffmax')">
+                <img src="https://i.postimg.cc/wvnfKrTW/Whats-App-Image-2026-01-22-at-14-56-43-(1).jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FF MAX">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Free Fire MAX</p>
+            </div>
+            
+            <div onclick="pilihGame('ff')">
+                <img src="https://i.postimg.cc/ht80yjmd/Whats-App-Image-2026-01-22-at-14-56-43-(2).jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FF">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Free Fire</p>
+            </div>
+            
+            <div onclick="pilihGame('magic')" >
+                <img src="https://i.postimg.cc/g0nHYK5d/Whats-App-Image-2026-01-22-at-14-56-43.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="Magic Chess">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Magic Chess: Go Go</p>
+            </div>
+            
+            <div onclick="pilihGame('fc')">
+                <img src="https://i.postimg.cc/7hBFT9Hq/Whats-App-Image-2026-01-22-at-14-56-42.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FC Mobile">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">EA SPORTS FC™ Mobile</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden space-y-6 max-w-4xl mx-auto">
+        
+        <button onclick="tombolKembali()" class="flex items-center gap-2 text-purple-400 hover:text-white transition font-semibold mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+            Kembali Pilih Game
+        </button>
+
+        <div class="bg-white rounded-3xl p-6 text-black shadow-xl">
+            <h2 class="text-xl font-bold uppercase mb-4 text-purple-700">1. Data Akun <span id="judul-game" class="text-gray-400"></span></h2>
+            <div id="form-id" class="flex flex-col md:flex-row gap-4"></div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 text-black shadow-xl">
+            <h2 class="text-xl font-bold uppercase mb-4 text-purple-700">2. Pilih Nominal</h2>
+            <div id="list-harga" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+        </div>
+
+        <button onclick="kirimWA()" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-2xl shadow-lg transition-all transform active:scale-95 flex justify-center items-center gap-2 text-lg">
+            BELI SEKARANG
+        </button>
+    </div>
+
+    <script>
+        let gameTerpilih = null;
+        let nominalTerpilih = "";
+        let hargaTerpilih = "";
+        const nomorWA = "6281234567890"; // GANTI NOMOR WA ANDA DI SINI
+
+        const dbGame = {
+            mlbb: { nama: "Mobile Legends: Bang Bang", placeholder: "User ID", needZone: true, nominal: [{dm:"5 DM", harga:"Rp 1.500"}, {dm:"86 DM", harga:"Rp 20.000"}] },
+            ffmax: { nama: "Free Fire MAX", placeholder: "Player ID", needZone: false, nominal: [{dm:"70 DM", harga:"Rp 10.000"}, {dm:"355 DM", harga:"Rp 50.000"}] },
+            ff: { nama: "Free Fire", placeholder: "Player ID", needZone: false, nominal: [{dm:"70 DM", harga:"Rp 10.000"}, {dm:"140 DM", harga:"Rp 20.000"}] },
+            magic: { nama: "Magic Chess: Go Go", placeholder: "User ID", needZone: true, nominal: [{dm:"10 DM", harga:"Rp 3.000"}, {dm:"50 DM", harga:"Rp 14.000"}] },
+            fc: { nama: "EA SPORTS FC™ Mobile", placeholder: "Player ID", needZone: false, nominal: [{dm:"100 Points", harga:"Rp 15.000"}, {dm:"500 Points", harga:"Rp 75.000"}] }
+        };
+
+        function pilihGame(key) {
+            gameTerpilih = dbGame[key];
+            document.getElementById('katalog-section').classList.add('hidden');
+            document.getElementById('main-content').classList.remove('hidden');
+            document.getElementById('judul-game').innerText = `(${gameTerpilih.nama})`;
+            
+            // Reset Pilihan
+            nominalTerpilih = "";
+            hargaTerpilih = "";
+
+            // Render Form ID
+            let inputHTML = `<input id="user_id" type="text" placeholder="${gameTerpilih.placeholder}" class="flex-1 border-2 p-4 rounded-xl focus:border-purple-600 outline-none">`;
+            if (gameTerpilih.needZone) inputHTML += `<input id="zone_id" type="text" placeholder="Zone ID" 
+               class="flex-1 border-2 p-4 rounded-xl focus:border-purple-600 outline-none">`;
+            document.getElementById('form-id').innerHTML = inputHTML;
+
+            // Render Nominal
+            const listHarga = document.getElementById('list-harga');
+            listHarga.innerHTML = "";
+            gameTerpilih.nominal.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "border-2 p-4 rounded-2xl cursor-pointer hover:border-purple-600 transition nominal-card";
+                card.innerHTML = `<p class="font-bold text-sm">${item.dm}</p><p class="text-red-500 text-xs">${item.harga}</p>`;
+                card.onclick = () => {
+                    document.querySelectorAll('.nominal-card').forEach(c => c.classList.remove('selected'));
+                    card.classList.add('selected');
+                    nominalTerpilih = item.dm;
+                    hargaTerpilih = item.harga;
+                };
+                listHarga.appendChild(card);
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function tombolKembali() {
+            document.getElementById('katalog-section').classList.remove('hidden');
+            document.getElementById('main-content').classList.add('hidden');
+        }
+
+        function kirimWA() {
+            const id = document.getElementById('user_id').value;
+            const zone = document.getElementById('zone_id') ? document.getElementById('zone_id').value : '';
+            
+            if (!id || !nominalTerpilih) return alert("Lengkapi data dan pilih nominal!");
+
+            const pesan = `Halo Admin, saya mau topup:\n\n` +
+                          `🎮 Game: ${gameTerpilih.nama}\n` +
+                          `🆔 ID: ${id} ${zone ? '('+zone+')' : ''}\n` +
+                          `💎 Nominal: ${nominalTerpilih}\n` +
+                          `💰 Harga: ${hargaTerpilih}`;
+            
+            window.open(`https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`, '_blank');
+        }
+    </script>
 </body>
 </html>
-</section>
-
-    <footer class="py-20 px-6 bg-orange-600 text-white text-center">
-        <div class="container mx-auto max-w-2xl">
-            <h3 class="text-3xl font-bold mb-6">Lagi di Rumah Aja? Temani Waktumu dengan Kripik Nagih!</h3>
-            <p class="mb-10 opacity-80">Siap kirim ke seluruh wilayah. Pesan sekarang melalui WhatsApp untuk respon cepat.</p>
-            <a href="https://wa.me/6282124360741" class="inline-flex items-center space-x-3 bg-white text-orange-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-2xl">
-                <i class="fab fa-whatsapp text-2xl"></i>
-                <span>Order via WhatsApp</span>
-            </a>
+</html>
+    </script>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANET GAME - Topup Instan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #280031; color: white; font-family: sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .section-box { background: white; color: #2c1654; padding: 20px; border-radius: 15px; margin-bottom: 20px; }
+        .circle-num { background: #7c4dff; color: white; width: 25px; height: 25px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; margin-right: 10px; }
+        .diamond-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-top: 15px; }
+        .diamond-item { border: 2px solid #eee; padding: 15px; border-radius: 10px; cursor: pointer; text-align: center; transition: 0.3s; color: #2c1654; }
+        .btn-beli { background: #7c4dff; color: white; width: 100%; padding: 15px; border-radius: 10px; font-weight: bold; border: none; cursor: pointer; margin-top: 10px; }
+        .btn-back { background: #eee; color: #666; width: 100%; padding: 10px; border-radius: 10px; border: none; cursor: pointer; margin-top: 10px; }
+        .icon-circle { background-color: white; color: #280031; min-width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 25px; }
+    </style>
+</head>
+<footer class="mt-20 border-t border-white/10 pt-10 pb-10">
+        <div class="flex flex-wrap gap-6 text-[10px] uppercase font-bold text-gray-500 justify-center">
+            <p>© Hak Cipta Planet Game</p>
+            <p>Syarat & Ketentuan</p>
+            <p>Kebijakan Privasi</p>
         </div>
-    </section>
-
-    <footer class="py-10 text-center border-t border-orange-100 text-gray-400 text-sm">
-        <p>&copy; 2026 KRIPK NAGIH. Semua Hak Dilindungi.</p>
     </footer>
+    <body class="p-4 md:p-10">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
+            <div class="flex gap-4 items-start">
+                <div class="icon-circle"><i class="fas fa-clock"></i></div>
+                <div>
+                    <h3 class="font-bold text-lg">Bayar dalam hitungan detik</h3>
+                    <p class="text-gray-400 text-sm">Proses otomatis dan sangat cepat.</p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-start">
+                <div class="icon-circle"><i class="fas fa-bolt"></i></div>
+                <div>
+                    <h3 class="font-bold text-lg">Pengiriman Instan</h3>
+                    <p class="text-gray-400 text-sm">Item langsung masuk ke akun Anda.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
