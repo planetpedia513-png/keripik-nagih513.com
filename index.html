@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLANET GAME TOPUP | Top-up Game Tercepat & Terpercaya</title>
@@ -8,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0d0118; }
+        body {font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0d0118; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .card-game:hover { transform: translateY(-8px); border-color: #a855f7; box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.4); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -448,6 +449,47 @@
             border-color: #7c3aed;
             background-color: #f5f3ff;
         }
+
+        
+        /* Kontainer utama menggunakan Grid */
+.game-container {
+  display: grid;
+  /* Membuat 3 kolom yang sama rata di HP */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; /* Jarak antar kotak game */
+  padding: 15px;
+  background-color: #1a0b2e; /* Warna gelap sesuai gambar */
+}
+
+/* Kotak untuk setiap game */
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Mengatur gambar agar bulat di sudut dan responsif */
+.game-card img {
+  width: 100%;
+  max-width: 80px; /* Ukuran maksimal ikon */
+  border-radius: 15px; /* Membuat sudut tumpul */
+  aspect-ratio: 1 / 1; /* Memastikan gambar tetap kotak/presisi */
+  object-fit: cover;
+  border: 1px solid #3d2a5a;
+}
+
+/* Mengatur teks judul game */
+.game-card p {
+  color: white;
+  font-size: 11px; /* Ukuran kecil agar tidak memenuhi layar HP */
+  margin-top: 8px;
+  font-family: sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word; /* Agar teks panjang otomatis turun ke bawah */
+}
+
+
     </style>
 </head>
 <body class="bg-[#120024] p-4 md:p-10 text-white font-sans">
@@ -457,7 +499,7 @@
             <span class="bg-purple-600 w-2 h-8 rounded-full"></span> PILIH GAME
         </h2>
        
-        <div class="flex justify-start gap-4 p-5">
+       <div class="flex justify-start gap-4 p-5">
             <div onclick="pilihGame('mlbb')">
                 <img src="https://i.postimg.cc/T1q1bp17/Whats-App-Image-2026-01-22-at-14-56-44.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
                 <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Mobile Legends: Bang Bang</p>
